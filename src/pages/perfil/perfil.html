@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <ion-icon name="happy"></ion-icon>
+      Perfil
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/senna.png">
+            <h2>{{ usuarioLogado.nome }}</h2>
+            <p>{{ usuarioLogado.dataNascimento }}</p>
+      </ion-avatar>
+    </ion-item>
+    <!-- <ion-item>
+      <p></p>
+    </ion-item>
+    <ion-item>
+      <p></p>
+    </ion-item> -->
+    <ion-item>
+      <p><ion-icon name="mail"></ion-icon>
+        {{ usuarioLogado.email }}</p>
+    </ion-item>
+    <ion-item>
+      <p>
+        <ion-icon name="call"></ion-icon>
+        {{ usuarioLogado.telefone }}</p>
+    </ion-item>
+  </ion-card>
+</ion-content>
